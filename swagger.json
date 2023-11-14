@@ -2,13 +2,20 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "Sample API",
-    "description": "An example API using Swagger"
+    "title": "EXIM REST API DEV",
+    "description": "EXIM CBS9 project on DEV"
   },
-  "basePath": "/api",
+
+  "servers": [
+    {
+      "url": "http://localhost:8000",
+      "description": "Local Development Server"
+    },
+  ],
+  "basePath": "/cbs9/cbs-api/v1",
   "schemes": ["http", "https"],
   "paths": {
-    "/hello": {
+    "/csd/calendar/TH": {
       "get": {
         "summary": "Get a greeting",
         "description": "Returns a friendly greeting",
