@@ -1,0 +1,34 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Sample API",
+    "description": "An example API using Swagger"
+  },
+  "basePath": "/api",
+  "schemes": ["http", "https"],
+  "paths": {
+    "/hello": {
+      "get": {
+        "summary": "Get a greeting",
+        "description": "Returns a friendly greeting",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Hello, world!"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
